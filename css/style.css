@@ -1,0 +1,140 @@
+@import url(http://fonts.googleapis.com/css?family=Courgette);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:400,700);
+
+//Reset CSS for all the sub elements of main class
+ .stylishnotificationpopup-modal > * {
+    background: none;
+    border: none;
+    bottom: auto;
+    clear: none;
+    cursor: default;
+    /* didn't really know what the default for display should be*/
+    /*display:inline;*/
+    float: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-style: normal;
+    font-weight: normal;
+    height: auto;
+    left: auto;
+    letter-spacing: normal;
+    line-height: normal;
+    max-height: none;
+    max-width: none;
+    min-height: 0;
+    min-width: 0;
+    overflow: visible;
+    position: static;
+    right: auto;
+    text-align: left;
+    text-decoration: none;
+    text-indent: 0;
+    text-transform: none;
+    top: auto;
+    visibility: visible;
+    white-space: normal;
+    width: auto;
+    z-index: auto;
+}
+.stylishnotificationpopup-modal {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 99999;
+    opacity: 1;
+    display: none;
+}
+.stylishnotificationpopup-modal > div {
+    width: 500px;
+    position: relative;
+    margin: 8% auto;
+    border-radius: 10px;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 8px 0px 20px 14px rgba(0, 0, 0, 0.08);
+}
+
+.stylishnotificationpopup-modal h2 {
+    font-family: 'Courgette', cursive;
+    font-size: 32px;
+    line-height: 2;
+    text-align: center;
+    text-transform: capitalize;
+}
+.stylishnotificationpopup-modal p {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center;
+    color: #777;
+}
+
+.stylishnotificationpopup-modal .stylishnotificationpopup-button {
+    font-family: 'Titillium Web', sans-serif;
+    display: block;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background: #2785C8;
+    color: #FFF;
+    border: 0px none;
+    /*outline: 2px solid #2785C8;*/
+    width: 85%;
+
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.stylishnotificationpopup-modal .snp_button_link{
+    text-decoration: none;
+}
+.stylishnotificationpopup-modal .stylishnotificationpopup-button:hover {
+    background: #52A9E7;
+}
+.stylishnotificationpopup-modal .stylishnotificationpopup-button:active {
+    background: #fff;
+}
+.stylishnotificationpopup-close {
+    position: absolute;
+    right: 12px;
+    top: 16px;
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.stylishnotificationpopup-close:hover {}
+
+.stylishnotificationpopup-modal a{
+    font-size: 9px;
+    margin: auto;
+    display: block;
+    text-align: center;
+}
+
+.animated { visibility: visible !important; }
+
+@media(max-width:767px){
+    .mstylishnotificationpopup-modal{
+        padding: 4px;
+    }
+    .stylishnotificationpopup-modal > div {
+        width: 100%;
+        padding: 58px 0;
+    }
+    .stylishnotificationpopup-modal h2 {
+        font-size: 25px;
+    }
+    .stylishnotificationpopup-modal p {
+        font-size: 20px;
+    }
+}
